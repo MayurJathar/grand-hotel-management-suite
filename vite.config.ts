@@ -5,7 +5,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: "/grand-hotel-management-suite/",   // ✅ Add base here
+    base: "/grand-hotel-management-suite/",   // 👈 REQUIRED for GitHub Pages
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
